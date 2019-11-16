@@ -1,0 +1,22 @@
+.box-sizing-border {
+  box-sizing: border-box;
+}
+
+.draggable-container {
+  width: 100%;
+  height: 100vh;
+}
+
+.draggable {
+  width: 100%;
+  position: relative;
+}
+
+.draggable-node {
+  width: 100%;
+  box-shadow: 0 0 2rpx 2rpx #ddd;
+}
+
+.draggable-node__dragging {
+  box-shadow: 0 0 8rpx 8rpx #ddd;
+}

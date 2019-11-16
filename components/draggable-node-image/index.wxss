@@ -1,0 +1,10 @@
+.image {
+  width: 100%;
+  position: relative;
+}
+
+.image image {
+  width: 400rpx;
+  height: 400rpx;
+  margin: 10rpx auto;
+}

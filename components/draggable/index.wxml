@@ -1,0 +1,38 @@
+<scroll-view
+  class="draggable-class draggable-container"
+  scroll-y="{{!draggingId}}"
+>
+  <movable-area
+    class="draggable box-sizing-border"
+    style="height: {{totalHeight}}px;"
+  >
+    <block
+      wx:for="{{list}}"
+      wx:key="id"
+    >
+      <movable-view
+        class="draggable-node box-sizing-border"
+        damping="{{166}}"
+        direction="vertical"
+        disabled="{{true}}"
+        friction="{{2}}"
+        out-of-bounds="{{true}}"
+        style="width: 100%; height: {{nodeIdPosMap[item.id].height}}px;"
+        y="{{draggingId == item.id ? draggingNodeY : nodeIdPosMap[item.id].y}}"
+      >
+        <view
+          bind:longpress="handleNodeLongPress"
+          bind:touchend="handleNodeTouchEnd"
+          bind:touchmove="handleNodeTouchMove"
+          class="draggable-node-content {{item.id == draggingId ? 'draggable-node__dragging' : ''}}"
+          id="{{item.id}}"
+        >
+          <fish-draggable-node
+            content="{{item.content}}"
+            type="{{item.type}}"
+          ></fish-draggable-node>
+        </view>
+      </movable-view>
+    </block>
+  </movable-area>
+</scroll-view>

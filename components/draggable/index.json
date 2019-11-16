@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "fish-draggable-node": "../draggable-node/index"
+  }
+}

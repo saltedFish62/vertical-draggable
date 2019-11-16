@@ -1,2 +1,2 @@
-# vertical-draggable
-Vertical draggable component in weChat mini program.
+# wxmp-Draggable
+Draggable in weChat mini program.

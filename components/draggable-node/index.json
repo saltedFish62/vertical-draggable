@@ -1,0 +1,7 @@
+{
+  "components": true,
+  "usingComponents": {
+    "fish-text": "../draggable-node-text/index",
+    "fish-image": "../draggable-node-image/index"
+  }
+}

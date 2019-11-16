@@ -1,0 +1,6 @@
+<block wx:if="{{type == 'text'}}">
+  <fish-text content="{{content}}"></fish-text>
+</block>
+<block wx:if="{{type == 'image'}}">
+  <fish-image content="{{content}}"></fish-image>
+</block>
